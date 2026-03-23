@@ -14,12 +14,12 @@
 
     <title>Article preview component</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </head>
   <body>
     <section class="Article">
       <div class="image">
-        <img src="images/drawers.jpg" alt="drawers" width="300px" />
+        <img src="images/drawers.jpg" alt="drawers" width="305px" />
       </div>
       <div class="content">
         <p class="intro">
@@ -31,23 +31,46 @@
           it felt slightly bare and uninviting.I've got some simple tips to help
           you make any room feel complete.
         </p>
-        <section class="details">
-        <div class="author">
-          <div class="avatar">
-            <img src="images/avatar-michelle.jpg" alt="">
-          </div>
-          <div class="infromation">
-            <p class="name">Michelle Appleton</p>
-            <p class="date">28 Jun 2022</p>
-          </div>
-        </div>
-        <div class="share">
-          <img src="images/icon-share.svg" alt="share">
-        </div>
-        </section>
+        <section class="details" id="detailsSection">
+  <div class="author">
+    <div class="avatar">
+      <img src="images/avatar-michelle.jpg" alt="" />
+    </div>
+    <div class="infromation">
+      <p class="name"><b>Michelle Appleton</b></p>
+      <p class="date">28 Jun 2020</p>
+    </div>
+  </div>
+
+  <!-- SHARE BUTTON -->
+  <div class="share" id="shareBtn">
+    <img src="images/icon-share.svg" alt="share">
+  </div>
+
+  <!-- DESKTOP TOOLTIP -->
+  <div class="share-tooltip" id="desktopTooltip">
+    <span>SHARE</span>
+    <a href="#"><img src="images/icon-facebook.svg"></a>
+    <a href="#"><img src="images/icon-twitter.svg"></a>
+    <a href="#"><img src="images/icon-pinterest.svg"></a>
+  </div>
+
+  <!-- MOBILE TOOLTIP -->
+  <div class="share-tooltip-mobile" id="mobileTooltip">
+    <span>SHARE</span>
+    <div class="social-links">
+      <a href="#"><img src="images/icon-facebook.svg"></a>
+      <a href="#"><img src="images/icon-twitter.svg"></a>
+      <a href="#"><img src="images/icon-pinterest.svg"></a>
+    </div>
+    <div class="mobile-share-close" id="mobileCloseBtn">
+      <img src="images/icon-share.svg">
+    </div>
+  </div>
+</section>
       </div>
     </section>
-
+<script src="main.js"></script>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
